@@ -20,7 +20,7 @@ export default function Farmer(props) {
   const [quantity, setQuantity] = useState('');
   const [unit, setUnit] = useState('');
 
-  const bakerAddress = "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC";
+  const bakerAddress = "0xbb08598F0D75c9Ff8f84d82EC324b0F1B79B7aCf";
 
 
   const getContract = async (needSigner = false) => {

@@ -58,7 +58,7 @@ export default function Farmer(props) {
   const getState = async (tokenId) => {
     try {
       const transparency = await getContract();
-      return await transparency.getState(Number(tokenId));
+      return await transparency.getState(tokenId);
     } catch (error) {
       console.log(error);
       window.alert("There was an error when getting the state of the token");
