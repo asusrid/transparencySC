@@ -85,7 +85,7 @@ export default function Farmer(props) {
   const transferBaker = async () => {
     try {
       const transparency = await getContract(true);
-      const tx = await transparency.transferToBaker(bakerAddress, selectedTokenId);
+      const tx = await transparency.transferToBaker(utils.getAddress(bakerAddress), selectedTokenId);
 
       setLoading(true);
       await tx.wait();
