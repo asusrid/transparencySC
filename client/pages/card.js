@@ -138,7 +138,7 @@ export default function Card(props) {
                 <strong>Made in:</strong>
               </Typography>
               <Typography variant="subtitle1" color="white" noWrap>
-                &nbsp;{tokenData.user.country}
+                &nbsp;{tokenData.user.location}
               </Typography>
             </div>
           </div>
